@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smokeSuite" thread-count="1">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="wait" value="30"/>
+
+    <parameter name="url" value="https://www.phptravels.net/"/>
+    <test name="smokeTests" preserve-order="true">
+
+        <classes>
+            <class name="com.phptravels.qa.cases.SearchFlightsTest"/>
+        </classes>
+    </test>
+</suite>
